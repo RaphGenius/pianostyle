@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Aboreto&family=Roboto&display=swap");
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+$darkGrey: #d9d2cc;
+$lightGrey: #f2f1ef;
+$primary: #d9b18e;
+$secondary: #a67564;
+$tertiary: #723e31;
+
+$black: rgb(59, 59, 59);
+$white: #f1f1f1;
+
+$fontClassy: "Aboreto", cursive;
+$fontNormal: "Roboto", sans-serif;
+
+a {
+  text-decoration: none;
+  color: black;
+}
