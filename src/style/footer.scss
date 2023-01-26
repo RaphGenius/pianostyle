@@ -1,0 +1,79 @@
+.footer {
+  color: $black;
+  padding: 1em;
+  font-family: $fontNormal;
+  flex-wrap: wrap;
+  width: 100%;
+  background: linear-gradient(to bottom, $primary, $secondary 80%);
+  border-top: 5px solid $black;
+  display: flex;
+  min-height: 200px;
+  &_container {
+    flex: 1;
+    font-size: 0.8em;
+  }
+  &_info {
+    h3 {
+      position: relative;
+      text-align: center;
+      font-family: $fontClassy;
+      color: black;
+      font-weight: bold;
+      font-size: 1.5em;
+      margin-bottom: 1em;
+      padding: 0 0.5em 1em;
+
+      &::after {
+        content: "";
+        position: absolute;
+        background-color: $tertiary;
+        width: 50%;
+        transform: translateX(50%);
+        height: 3px;
+        bottom: -5px;
+        left: 0;
+      }
+    }
+    p {
+      word-wrap: break-word;
+      font-size: 0.9em;
+      padding: 0 1em;
+      line-height: 1.2em;
+      color: $white;
+    }
+  }
+  &_action,
+  &_contact {
+    padding-left: 2em;
+    h3 {
+      color: $black;
+      font-weight: bold;
+
+      margin-bottom: 1em;
+      color: black;
+      font-weight: bold;
+    }
+  }
+  &_action,
+  &_contact {
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+      color: $lightGrey;
+      li {
+        line-height: 1.5em;
+        cursor: pointer;
+        &:hover {
+          color: black;
+        }
+      }
+      a {
+        color: $lightGrey;
+        &:hover {
+          color: black;
+        }
+      }
+    }
+  }
+}

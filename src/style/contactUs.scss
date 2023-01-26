@@ -1,0 +1,31 @@
+.contact {
+  text-align: center;
+  font-family: $fontNormal;
+  padding-top: 1em;
+  margin-bottom: 3em;
+
+  h3 {
+    font-size: 1.5em;
+    margin-bottom: 2em;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 0 1em;
+    line-height: 2em;
+  }
+  button {
+    padding: 1em;
+    border-radius: 15px;
+    border: none;
+    background-color: $tertiary;
+    transition: 200ms ease-in all;
+    &:hover {
+      transform: scale(1.1);
+    }
+    a {
+      font-family: $fontNormal;
+      color: $white;
+    }
+  }
+}

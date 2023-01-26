@@ -1,5 +1,7 @@
 import React from "react";
 import pianoImg from "../assets/piano_presentation.jpg";
+import { GiGrandPiano, GiFrance, GiRecycle } from "react-icons/gi";
+import { FaGlobeEurope } from "react-icons/fa";
 const Societe = () => {
   return (
     <section className="section_societe">
@@ -7,6 +9,7 @@ const Societe = () => {
         <div>
           <h2>Plus de 30 ans d'experience</h2>
         </div>
+
         <div className="description">
           <div className="description__img description__content">
             <img src={pianoImg} alt="une personne jouant du piano" />
@@ -15,22 +18,43 @@ const Societe = () => {
             <div className=" description__text">
               <p>
                 Fondé en 1985, <span>PianoStyle</span> est un mélange de passion
-                et de savoir faire. <br />
+                et de savoir faire transmit de génération en génération. <br />
               </p>
             </div>
             <div className=" description__text">
               <p>
-                Entreprise familiale, nous excercons notre passion dans la
+                Entreprise familiale, nous exerçons notre passion dans la
                 confection du noble instrument afin de vous proposer la meilleur
-                qualité qu'il soit.
+                expérience possible.
               </p>
             </div>
             <div className="description_item">
               <ul>
-                <li>2566 pianos créés</li>
-                <li>Exportation dans toute l'europe </li>
-                <li>Bois Français </li>
-                <li>Eco-responsable</li>
+                <li>
+                  2566 pianos créés{" "}
+                  <span>
+                    <GiGrandPiano />
+                  </span>
+                </li>
+                <li>
+                  Livré en Europe{" "}
+                  <span>
+                    <FaGlobeEurope />
+                  </span>
+                </li>
+                <li>
+                  Bois Français{" "}
+                  <span>
+                    <GiFrance />
+                  </span>
+                </li>
+                <li>
+                  Eco-responsable{" "}
+                  <span>
+                    {" "}
+                    <GiRecycle />
+                  </span>
+                </li>
               </ul>
             </div>
           </div>

@@ -1,6 +1,8 @@
 .section_societe {
   font-family: $fontNormal;
+  margin-bottom: 1em;
   h2 {
+    text-underline-offset: 5%;
     font-size: 2em;
     text-align: center;
     margin-bottom: 1em;
@@ -9,6 +11,7 @@
     font-family: $fontClassy;
     text-decoration: underline;
     font-weight: bold;
+    line-height: 45px;
   }
 }
 .description {
@@ -17,38 +20,36 @@
   gap: 1em;
   width: 100%;
   padding: 1em;
-  height: 100%;
   &__img {
-    margin-bottom: 1em;
-    width: 100%;
-    border-radius: 10px;
     overflow: hidden;
 
-    box-shadow: 0 0 10px $tertiary;
     img {
       width: 100%;
       height: 100%;
       object-fit: cover;
+      transform: scale(1.1);
     }
   }
   &__content {
-    background: linear-gradient(to left, $secondary, $primary);
+    background: transparent;
+    box-shadow: 0px 0px 5px $black;
     width: 100%;
-    height: 300px;
     border-radius: 10px;
     max-width: 600px;
-    box-shadow: 0 0 15px black;
+    border: 1px solid;
   }
   &__text {
+    line-height: 30px;
     span {
       font-family: $fontClassy;
       font-weight: bold;
     }
-    padding: 0.5em;
+    padding: 1em;
     padding-bottom: 0;
     &::first-letter {
       font-weight: bold;
       margin-left: 1em;
+      font-size: 1.5em;
     }
     color: black;
     font-size: 1.1em;
@@ -60,23 +61,39 @@
   width: 100%;
 
   ul {
-    margin-top: 0.5em;
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     gap: 5px;
 
     li {
+      position: relative;
       display: flex;
       text-align: center;
       justify-content: center;
       align-items: center;
       border-radius: 10px;
-      color: $white;
-      background-color: $secondary;
+      color: $tertiary;
+      background-color: $lightGrey;
       width: 48%;
       height: 50px;
       font-weight: bold;
+      margin-top: 1em;
+      box-shadow: 0px 2px 2px $tertiary;
+      transition: all 200ms ease-in-out;
+      text-transform: uppercase;
+      cursor: pointer;
+      &:hover {
+        transform: scale(1.1);
+        box-shadow: 0 5px 15px $tertiary;
+        z-index: 6;
+      }
+
+      span {
+        margin-left: 10px;
+        font-size: 1.5em;
+        color: $secondary;
+      }
     }
   }
 }
@@ -85,5 +102,17 @@
   .description {
     flex-direction: column;
     align-items: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .description_item {
+    li {
+      font-size: 0.7em;
+      span {
+        display: none;
+        margin: 0;
+      }
+    }
   }
 }
