@@ -1,11 +1,21 @@
 import React from "react";
-import Navbar from "../components/Navbar";
+import Societe from "../components/Societe";
+import ContactUs from "../components/ContactUs";
+import Footer from "../components/Footer";
+import { motion as m } from "framer-motion";
 
 const Home = () => {
   return (
-    <div>
-      <Navbar />
-    </div>
+    <m.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ durantion: 1 }}
+    >
+      <Societe />
+      <ContactUs />
+      <Footer />
+    </m.div>
   );
 };
 

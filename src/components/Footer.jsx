@@ -31,19 +31,17 @@ const Footer = () => {
         <ul>
           <li>
             <a href="https://goo.gl/maps/zaxr2p4e3q6p4ckLA">
-              {" "}
               5 Rue François sympas <br />
               21 000 Dijon
             </a>
           </li>
           <li onClick={() => setShowNumber(!showNumber)}>
-            {" "}
             {showNumber ? "03 55 55 55 55" : "Appellez-nous"}
           </li>
           <li>
             <a href="mailto:pianostyle.cestcool@cool.com">
               Envoyez-nous un e-mail
-            </a>{" "}
+            </a>
           </li>
         </ul>
       </div>

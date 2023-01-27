@@ -1,16 +1,16 @@
 import React from "react";
-import Home from "./pages/Home";
-import Societe from "./components/Societe";
-import ContactUs from "./components/ContactUs";
-import Footer from "./components/Footer";
 
+import { BrowserRouter } from "react-router-dom";
+
+import Navbar from "./components/Navbar";
+import AnimatedRoute from "./components/AnimatedRoute";
 const App = () => {
   return (
     <div>
-      <Home />
-      <Societe />
-      <ContactUs />
-      <Footer />
+      <BrowserRouter>
+        <Navbar />
+        <AnimatedRoute />
+      </BrowserRouter>
     </div>
   );
 };
