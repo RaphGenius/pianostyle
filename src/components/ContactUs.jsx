@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const ContactUs = () => {
   return (
@@ -6,7 +7,7 @@ const ContactUs = () => {
       <h3>Interessé par nos modèles ?</h3>
 
       <button>
-        <a href="">Découvrez nos pianos !</a>
+        <Link to={"/pianos"}> Découvrez nos pianos !</Link>
       </button>
     </div>
   );

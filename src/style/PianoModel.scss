@@ -1,0 +1,100 @@
+.piano_container {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  overflow: hidden;
+  max-width: 900px;
+
+  &__image {
+    width: 100%;
+    height: 80%;
+    overflow: hidden;
+  }
+  img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    transition: all 400ms ease-in-out;
+  }
+  &__description {
+    color: $white;
+    padding: 0 1em;
+    height: 20%;
+    background-color: $tertiary;
+
+    &-title {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-family: $fontClassy;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.5em;
+      font-weight: bold;
+      transition: all 100ms ease-in-out;
+      & h3 {
+        transition: all 100ms ease-in-out;
+      }
+      & button {
+        cursor: pointer;
+        font-size: 1em;
+        border: none;
+        font-weight: bold;
+        color: $white;
+        font-family: $fontClassy;
+        background-color: transparent;
+        position: absolute;
+        bottom: -25px;
+        transition: all 100ms ease-in-out;
+        opacity: 0;
+
+        &::after {
+          content: "";
+          position: absolute;
+          left: 0;
+          bottom: -5px;
+          height: 2px;
+          width: 100%;
+          transform-origin: center;
+          background-color: $white;
+          transition: all 200ms ease-in-out;
+          transform: scaleX(0);
+        }
+      }
+      &:hover {
+        ::after {
+          transform: scaleX(1);
+        }
+      }
+    }
+    p {
+      margin-top: 0.5em;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: justify;
+      transition: all 100ms ease-in-out;
+    }
+  }
+}
+.piano_container:hover {
+  img {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  h3 {
+    transform: translateY(-40px);
+    opacity: 0;
+  }
+  button {
+    transform: translateY(-40px);
+    opacity: 1;
+  }
+}
