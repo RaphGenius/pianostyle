@@ -1,8 +1,8 @@
 import React from "react";
 // import pianoImg from "../assets/piano_queu.jpg";
 import { Link } from "react-router-dom";
-const PianoModel = ({ item, name, srcImage, alt }) => {
-  console.log(srcImage);
+const PianoModel = ({ name, srcImage, alt, id }) => {
+  console.log(id);
   return (
     <div className="piano_container">
       <div className="piano_container__image">
@@ -12,12 +12,14 @@ const PianoModel = ({ item, name, srcImage, alt }) => {
       <div className="piano_container__description">
         <div className="piano_container__description-title">
           <h3>{name} </h3>
-          <button>En savoir plus</button>
+
+          <button>
+            {" "}
+            <Link to={`/piano/${id}`}>En savoir plus </Link>
+          </button>
         </div>
 
-        <p className="piano_container__description-paragraphe">
-          <Link></Link>
-        </p>
+        <p className="piano_container__description-paragraphe"></p>
       </div>
     </div>
   );

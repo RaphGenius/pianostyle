@@ -17,7 +17,7 @@ const data = [
     src: pianoQueue,
     alt: "Piano à queue",
     TopSelling: true,
-    id: 1,
+    id: 0,
     description: "Un super jolie piano pour petits et grands",
   },
   {
@@ -34,7 +34,7 @@ const data = [
     src: pianoDroit,
     alt: "Piano droit",
     TopSelling: true,
-    id: 2,
+    id: 1,
     description: "Un super jolie piano pour petits et grands",
   },
 
@@ -52,7 +52,7 @@ const data = [
     src: pianoElec,
     alt: "Piano à queue",
     TopSelling: true,
-    id: 3,
+    id: 2,
     description: "Un super jolie piano pour petits et grands",
   },
 ];

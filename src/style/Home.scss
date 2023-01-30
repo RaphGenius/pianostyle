@@ -3,4 +3,7 @@ body {
   width: 100%;
   overflow-x: hidden;
   background: linear-gradient(to top, $secondary, $white);
+  height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
 }

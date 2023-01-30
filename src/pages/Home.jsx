@@ -14,7 +14,6 @@ const Home = () => {
     >
       <Societe />
       <ContactUs />
-      <Footer />
     </m.div>
   );
 };
